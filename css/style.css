@@ -1,0 +1,102 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+}
+.hidden {
+    display: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.photo {
+    height: 300px;
+    width: 300px;
+    /*object-fit: cover;*/
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: transform .1s;
+}
+.photo img:hover {
+    transform: scale(1.1);
+}
+.btn {
+    padding: 10px;
+    background-color: dodgerblue;
+    margin-top: 20px;
+    color: #fff;
+    border: 2px solid dodgerblue;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #fff;
+    color: dodgerblue;
+}
+form {
+    margin-top: 20px;
+}
+input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.photo button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.original {
+    /*text-align: center;*/
+    /*margin-top: 10px;*/
+}
+.original img {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 1px solid dodgerblue;
+    transition: width 1.5s;
+}
+.original {
+    width: 30%;
+    float: left;
+    /*margin: 0 auto;*/
+    margin-left: 1%;
+}
+.original.full {
+    width: 48%;
+}
+.draggable {
+    position: absolute;
+}
+.grid div {
+    /*border: 1px solid gray;*/
+    overflow: hidden;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.5);
+}
+.grid.green-shadow {
+    box-shadow: 0 0 11px 2px forestgreen;
+}
