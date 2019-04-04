@@ -65,29 +65,33 @@ input {
     border-radius: 5px;
     border: 1px solid gray;
 }
+.photos {
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .photo button {
     background: none;
     border: 0;
     cursor: pointer;
 }
-.original {
-    /*text-align: center;*/
-    /*margin-top: 10px;*/
-}
 .original img {
-    width: 100%;
+    width: 30%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     border: 1px solid dodgerblue;
     transition: width 1.5s;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 999;
+    display: none;
+}
+.original:hover img{
+    display: block;
 }
 .original {
-    width: 30%;
-    float: left;
-    /*margin: 0 auto;*/
-    margin-left: 1%;
-}
-.original.full {
-    width: 48%;
+    text-align: center;
+    cursor: pointer;
 }
 .draggable {
     position: absolute;

@@ -76,15 +76,8 @@ $originalPieces = $pieces;
             grid-template-rows: repeat(<?= $data['rows'] ?>,1fr);
             /*margin: 0 auto;*/
             box-shadow: 0 0 5px rgba(0,0,0,0.5);
-            margin-top: 20px;
+            margin: 20px auto;
             transition: box-shadow 1.5s;
-            /*float: right;*/
-            margin-right: 1%;
-            margin-left: auto;
-        }
-        .grid img {
-            /*width: 100%;*/
-            /*display: block;*/
         }
         .container {
             position: relative;
@@ -137,7 +130,10 @@ $originalPieces = $pieces;
             });
         });
     </script>
-        <div class="original"><img src="<?= $original_path ?>" alt=""></div>
+        <div class="original">
+            Показать оригинал
+            <img src="<?= $original_path ?>" alt="">
+        </div>
         <div class="grid">
             <?php foreach($pieces as $piece): ?>
                 <div data-id="<?= $piece ?>" class="droppable"></div>
